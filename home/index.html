@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>陈天宏个人导航网</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://at.alicdn.com/t/font_2962400_gpo2ebvd428.js"></script>
+<style>
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0，0，0，.5);
+    z-index: -1
+}
+</style>
+</head>
+<body>
+    <div id="jsi-water-line-container" class="container"></div> 
+
+	<div class="qqimg">
+		<img src="images/BB524D4339F5632D1FBD1B339492C172.png"=qq&nk=3270361156&s=640">
+	</div>
+	<div class="solid-ht"></div>
+	<div class="solid-wh"></div>
+	<div class="title">
+		<h1><i>陈天宏个人主页</i></h1>
+		<p>先活着吧，以后的日后再想想</p>
+	</div>
+	<div class="solid-wh"></div>
+	<div class="solid-ht"></div>
+	<div class="nav">
+		<ul>
+			<li><a href="#">学习资料</a></li>
+			<li><a href="#">等待添加</a></li>
+			<li><a href="#">等待添加</a></li>
+			<li><a href="E:\工具\Adobe\202103020216\相册网页站点\13648\index.html">dyn&cth相册</a></li>
+
+		</ul>
+	</div>
+	<div class="contact">
+		<h3>点击下方支助我一点吧</h3>
+		<a class="zzs" href="JavaScript:;" id="ewm">
+			<svg class="icon" aria-hidden="true">
+ 				<use xlink:href="#icon-QQ"></use>
+          	</svg><span> Q Q</span>
+        </a>
+		<a class="zzs" href="JavaScript:;" id="ewm">
+			<svg class="icon" aria-hidden="true">
+ 				<use xlink:href="#icon-zhifubao
+"></use>
+          	</svg><span> 支付宝</span>
+        </a>
+        <a class="zzs" href="JavaScript:;" id="ewm">
+			<svg class="icon" aria-hidden="true">
+ 				<use xlink:href="#icon-weixinzhifu
+"></use>
+          	</svg><span> 微信</span>
+        </a>
+	</div>
+    <div class="zs-qq">
+        <p>请扫描以下二维码向我付款</p>
+        <img src=""/>
+        <p>非常感谢你的每一赞助</p>
+        <p>你们的每一笔赞助,我都会记在心里</p>
+        <button id="btn">确定</button>
+    </div>
+	<div class="copyright">
+		<p>1749919436@qq.com</p>
+	</div>
+    <audio autoplay="autoplay" id="audio_play" loop="loop">
+    <source src="https://sharefs.ali.kugou.com/202112120017/e80dc60e540c55b7d93d5ed5e9f745fd/KGTX/CLTX001/c7da202212ff8314ab13ba5dd7957b30.mp3" type="audio/mpeg">
+    <source src= type="audio/mpeg">
+    </audio>    
+    </div>
+    <div class="right-fixed"> 
+				<ul> 
+					<li> 
+						<div class="qq-msg">
+							 QQ:3270361156 
+						</div><a href="JavaScript:;"><img src="./images/qq.png"></a></li> 
+					<li> 
+						<div class="img-msg"> 
+							<img src="./img/wxt.jpg"> 
+						</div><a href="JavaScript:;"><img src="./images/wx.png"></a></li>
+				</ul> 
+			</div> 
+    <div class="mask"></div>
+    <script src="http://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/xy.js"></script>
+    <script>
+       $(function (){
+         
+          $(".contact a").eq(0).click(function (){//qq二维码
+             $(".zs-qq img").attr("src","./images/ewm.png");
+             $(".zs-qq").show();
+          })
+          $(".contact a").eq(1).click(function (){//支付宝二维码
+             $(".zs-qq img").attr("src","./images/ewm.png");
+             $(".zs-qq").show();
+          })
+          $(".contact a").eq(2).click(function (){//微信二维码
+             $(".zs-qq img").attr("src","./images/wxskm.png");
+             $(".zs-qq").show();
+          })
+          $("#btn").click(function (){
+             $(".zs-qq").hide();
+          })
+       })
+       $(".right-fixed ul li a").click(function (){
+				$(".right-fixed ul li div").hide();
+				$(this).prev().show();
+				$(".mask").show();
+				$(".mask").click(function(){
+					$(".right-fixed ul li div").hide();
+					$(".mask").hide();
+				}
+				);
+			}
+			);
+    </script>
+    
+
+
+</body>
+</html>
